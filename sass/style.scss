@@ -5,37 +5,18 @@
  @mixin name {
      @include first();
  }
+ @function background($color){
 
-$list:"HTML5","CSS3","JAVA","REACT";
-
-.text{
-  color: background(red);
-  font-size: 20px;
-}
-
-
-.text,textarea, h1{
-    @extend .text;
-}
-
-.btn {
-  @include border();
+    @if($color!=#FFFFFF){
   
-}
-
-@function background($color){
-
-  @if($color!=#FFFFFF){
-
-    @return #FFFFFF;
-    
-  }@else {
-    @return $color;
+      @return #FFFFFF;
+      
+    }@else {
+      @return black;
+    }
   }
-}
 
-
-@function first(){
+  @function first(){
 
   @return nth($list,1);
 
@@ -49,10 +30,39 @@ $list:"HTML5","CSS3","JAVA","REACT";
 }
 
 
+$list:"HTML5","CSS3","JAVA","REACT";
+
+.text{
+  color: background(#000);
+  font-size: 20px;
+ 
+}
+
+
+.text,textarea, h1{
+    @extend .text;
+}
+
+.btn {
+  @include border();
+  
+}
+
+
+body{
+    background-color: background(#000);
+}
+
+
+
 .langage1{
-    content:first();
+    content: first();
 }
 
 .langage2{
     content: last();
+}
+
+.btn-color{
+    color: background(#FFFFFF);
 }

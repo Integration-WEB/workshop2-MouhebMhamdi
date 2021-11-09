@@ -1,10 +1,14 @@
 .text, textarea, h1 {
-  color: background(red);
+  color: #FFFFFF;
   font-size: 20px;
 }
 
 .btn {
   border: 3px solid yellow;
+}
+
+body {
+  background-color: #FFFFFF;
 }
 
 .langage1 {
@@ -13,6 +17,10 @@
 
 .langage2 {
   content: "REACT";
+}
+
+.btn-color {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
