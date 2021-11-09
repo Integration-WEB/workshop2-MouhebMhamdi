@@ -7,7 +7,11 @@
   border: 3px solid yellow;
 }
 
-.langages {
+.langage1 {
+  content: "HTML5";
+}
+
+.langage2 {
   content: "REACT";
 }
 

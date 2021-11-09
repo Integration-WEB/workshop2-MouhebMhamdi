@@ -37,7 +37,7 @@ $list:"HTML5","CSS3","JAVA","REACT";
 
 @function first(){
 
-  @return nth($list,0);
+  @return nth($list,1);
 
 }
 
@@ -49,6 +49,10 @@ $list:"HTML5","CSS3","JAVA","REACT";
 }
 
 
-.langages{
-    content:last();
+.langage1{
+    content:first();
+}
+
+.langage2{
+    content: last();
 }
