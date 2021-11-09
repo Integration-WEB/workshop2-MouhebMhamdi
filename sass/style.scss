@@ -2,6 +2,10 @@
      border: 3px solid yellow;
  }
 
+ @mixin name {
+     @include first();
+ }
+
 $list:"HTML5","CSS3","JAVA","REACT";
 
 .text{
@@ -16,6 +20,7 @@ $list:"HTML5","CSS3","JAVA","REACT";
 
 .btn {
   @include border();
+  
 }
 
 @function background($color){
@@ -28,6 +33,8 @@ $list:"HTML5","CSS3","JAVA","REACT";
     @return $color;
   }
 }
+
+
 @function first(){
 
   @return nth($list,0);
@@ -39,4 +46,9 @@ $list:"HTML5","CSS3","JAVA","REACT";
 
   @return nth($list,length($list));
 
+}
+
+
+.langages{
+    content:last();
 }
