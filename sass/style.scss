@@ -1,0 +1,42 @@
+ @mixin border {
+     border: 3px solid yellow;
+ }
+
+$list:"HTML5","CSS3","JAVA","REACT";
+
+.text{
+  color: background(red);
+  font-size: 20px;
+}
+
+
+.text,textarea, h1{
+    @extend .text;
+}
+
+.btn {
+  @include border();
+}
+
+@function background($color){
+
+  @if($color!=#FFFFFF){
+
+    @return #FFFFFF;
+    
+  }@else {
+    @return $color;
+  }
+}
+@function first(){
+
+  @return nth($list,0);
+
+}
+
+
+@function last(){
+
+  @return nth($list,length($list));
+
+}

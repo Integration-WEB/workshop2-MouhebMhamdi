@@ -1,0 +1,10 @@
+.text, textarea, h1 {
+  color: background(red);
+  font-size: 20px;
+}
+
+.btn {
+  border: 3px solid yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
